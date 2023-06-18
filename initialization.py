@@ -10,7 +10,6 @@ creation_path_folder = os.path.join(main_directory, folder_name)
 
 class check_for_neccessary_files:
     def check_for_configuration_folder():
-        print("Checking for configuration folder...")
         if os.path.isdir(configuration_folder):
             print(colored("✓ Configuration Folder found", "green"))
         else:
@@ -28,7 +27,6 @@ class check_for_neccessary_files:
                 print(colored("Terminating....", "red"))
                 exit()
     def check_for_config_file():
-        print("Checking for configuration file...")
         if os.path.isfile(os.path.join(configuration_folder, "config.yml")):
             print(colored("✓ Configuration File found", "green"))
         else:
@@ -63,3 +61,4 @@ def login_choices():
 
 check_for_neccessary_files.check_for_configuration_folder()
 check_for_neccessary_files.check_for_config_file()
+login_choices()
