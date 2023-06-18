@@ -1,2 +1,3 @@
 # Banking-System
-Banking Management System I have created as a simple python project
+
+Banking Management System for me to learn thing such as Secured Login/Register system, SQL, databases, and maybe oauth
